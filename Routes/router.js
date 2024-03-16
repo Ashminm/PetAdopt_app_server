@@ -14,7 +14,6 @@ router.post('/pet/addpet',jwtMiddleware,multerConfig.single('p_image'),petContro
 router.get('/user/petlist',jwtMiddleware,usercontroller.userPets)
 router.get('/pet/pets',jwtMiddleware,usercontroller.getAllPets)
 router.get('/pet/history',jwtMiddleware,usercontroller.getHistory)
-// router.post('/pet/addhistory',usercontroller.addHistory)
 router.put('/user/updateprofile/:id',jwtMiddleware,multerConfig.single('image'),usercontroller.profileUpdate)
 router.put('/admin/updateprofileAdmin/:id',jwtMiddleware,multerConfig.single('Ad_image'),adminController.profileUpdateAdmin)
 router.delete('/pet/deletepet/:id',jwtMiddleware,adminController.deleteProject)

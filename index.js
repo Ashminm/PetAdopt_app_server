@@ -30,8 +30,5 @@ petserver.listen(PORT,()=>{
 // -----------------------------
 
 petserver.get('/',(req,res)=>{
-    res.send("<h1>Server is Successfully Running!!</h1>")
+    res.send("<h1>Server is Successfully Running!!! let's start</h1>")
 })
-// petserver.post('/',(req,res)=>{
-//     res.send("<h1>Post Request Receved!!</h1>")
-// })

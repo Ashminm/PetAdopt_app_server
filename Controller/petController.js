@@ -5,7 +5,7 @@ const addPets=async(req,res)=>{
     console.log("inside add pets Details!");
   
     const {pname,overview,age,breed,color,gender,Weight,status,userid,pId,amount,number, categories}=req.body
-    // console.log(`${pname},${overview},${age},${breed},${color},${gender},${Weight},${status},${ userid},${pId},${amount},${number},${ categories}`);
+    console.log(`${pname},${overview},${age},${breed},${color},${gender},${Weight},${status},${ userid},${pId},${amount},${number},${ categories}`);
     const p_image=req.file.filename
     
     try{
